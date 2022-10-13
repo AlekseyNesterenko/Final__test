@@ -9,14 +9,14 @@ for (int i = 0; i < array.Length; i++)
 {
     Console.Write($"Введите значения элемента массива: ");
     array[i] = Console.ReadLine();
-    if(string.IsNullOrWhiteSpace(array[i])) throw new Exception();
+    if (string.IsNullOrWhiteSpace(array[i])) throw new Exception();
 }
 Console.Write("Исходный массив из 7 элементов: ");
 PrintArray(array);
 
 Console.WriteLine();
 string[] newArray = RemoveLongEl(array);
-Console.Write($"Полученыый массив из {newArray.Length} элементов, где менее 4х символов : ");
+Console.Write($"Полученный массив из {newArray.Length} элементов, где менее 4х символов : ");
 PrintArray(newArray);
 
 string[] RemoveLongEl(string[] array)
